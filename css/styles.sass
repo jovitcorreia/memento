@@ -1,0 +1,159 @@
+---
+---
+
+$blue: #000028
+$green: #00ff77
+
+*, *:before, *:after
+    box-sizing: border-box
+    box-shadow: none
+    color: white
+
+a
+    color: inherit
+    text-decoration: none
+
+body 
+    background-color: $blue
+    font-family: 'Space Mono', monospace
+    line-height: 1.6em
+    margin: 0px auto
+    max-width: 62rem
+    #main
+        margin: 0 1rem
+
+fieldset
+    border: none
+    p
+        margin-block-end: 0
+
+footer
+    margin-top: 6rem
+    div
+        align-items: center
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        div
+            display: flex
+            flex-direction: row
+            font-size: 1rem
+            font-weight: 400
+            margin-bottom: 16px
+            a
+                opacity: 50%
+                &:not(:first-child)
+                    margin-left: 2rem
+                &:hover
+                    opacity: 100%
+                    i
+                        &:before
+                            color: $green
+    hr
+        border: none
+        padding-bottom: 2rem
+        position: relative
+        &:before
+            color: $green
+            content: '\2022'
+            left: 50%
+            position: absolute
+    small
+        opacity: 50% 
+
+h2
+  font-size: 1.6rem
+  font-weight: 700
+  letter-spacing: 6px
+  text-transform: uppercase
+
+header 
+    align-items: center
+    display: flex
+    justify-content: space-between
+    line-height: 4rem
+    margin-bottom: 56px
+
+label
+    font-size: 1.2rem
+    font-weight: bold
+    margin: 12px
+
+nav 
+    align-items: center
+    display: flex
+    flex-direction: row
+    margin-top: 0px
+    button 
+        background-color: transparent
+        border: 1px solid white
+        cursor: pointer
+        font-family: 'Space Mono', monospace
+        font-size: 1.2rem
+        min-height: 2rem
+        min-width: 4rem
+        padding: 0
+        &:not(:first-child)
+            margin-left: 1.2rem
+        a
+            border: 0.6rem solid transparent
+            display: inline-block
+            height: 100%
+            width: 100%
+        &:hover 
+            background-color: white
+            color: $blue
+            font-weight: bold
+        &.active    
+            background-color: $green
+            color: $blue
+            font-weight: bold
+            pointer-events: none
+
+p
+    font-size: 1.2em
+    font-style: normal
+    font-weight: 400
+    hyphens: auto
+    line-height: 1.6
+    padding-bottom: 1rem
+    a
+        border-bottom: 1px dashed hsla(0,0%, 62.7%, 0.50)
+        &:hover
+            border-bottom: unset
+            color: $green
+
+section
+    text-align: center
+    a
+        border-bottom: 1px dashed hsla(0,0%, 62.7%, 0.50)
+        &:hover
+            border-bottom: unset
+            color: $green
+    div
+        margin-top: 6rem
+        text-align: left       
+    #techs
+        display: grid
+        gap: 4rem
+        grid-template-columns: repeat(7, 1fr)
+        justify-items: center
+        margin-bottom: 10rem
+        padding: 0 6rem
+        a
+            border: none
+            text-decoration: none
+            &:hover
+                img
+                    filter: invert(84%) sepia(28%) saturate(4385%) hue-rotate(88deg) brightness(95%) contrast(113%)
+        img
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(255deg) brightness(104%) contrast(101%)
+                
+span
+    display: block
+    margin-block-end: 0.8rem
+
+@media screen and (max-width: 600px)
+    header
+        flex-direction: column
+

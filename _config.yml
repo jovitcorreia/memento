@@ -1,0 +1,7 @@
+title: Castanho Correia
+email: me@castanhocorreia.com
+baseurl: ""
+url: "https://castanhocorreia.com"
+permalink: "/:title.html"
+plugins:
+  - jekyll-feed

@@ -1,0 +1,10 @@
+<header>
+  <a href="/"><h1>Castanho Correia</h1></a>
+  <nav id="nav">
+    {% for item in site.data.map %}
+      <button class="{% if item.url == page.url %}active{% endif %}">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </button>
+    {% endfor %}
+  </nav>
+</header> 

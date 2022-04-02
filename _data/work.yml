@@ -1,0 +1,54 @@
+- company: "ioasys"
+  description: "Innovation Oasys is a software consulting company in Brazil, specialized in the creation and development of applications and other components of the digital universe. Through ioasys, I had the opportunity to be allocated in the Notifications Engine project for CVC CORP, in addition to performing some other internal tasks for the company"
+  end_date: false
+  location: "Belo Horizonte, Brazil"
+  position: "Software Engineer"
+  projects:
+    - company: "CVC CORP"
+      description: "CVC is the largest tourism company in Latin America. As a Java developer and tech lead I was hired to be part of the idealization and development of an engine that aims to handle thousands of notifications for thousands of internal users and customers on a daily basis in a complex microservices architecture that revolves around Spring Boot, MongoDB, Apache Kafka, Kubernetes and more"
+      name: "Notifications Engine"
+      url: "https://www.cvccorp.com.br/"
+  remote: true
+  start_date: "2022-01-01"
+  type: "Full-time"
+  url: "https://ioasys.com.br/"
+
+- company: "Kontulari"
+  description: "Kontulari is a fintech company that provides accounting services for small businesses. The constant challenges there were the integration with various external systems linked to the business rules and government agencies. There, I had the opportunity to plan and participate in a project to refactor a single monolith in an exciting microservices architecture"
+  end_date: "2022-01-01"
+  location: "Salvador, Brazil"
+  position: "Systems Developer Analyst"
+  remote: false
+  start_date: "2021-11-01"
+  type: "Full-time"
+  url: "https://kontulari.com.br/"
+
+- company: "Warsztat RPG"
+  description: "Warsztat was a RPG content distributor for Germany and Poland. I worked on a Call of Cthulhu system integration project for Foundry Virtual Tabletop, using technologies such as Handlebars, Sass, JavaScript, TypeScript, jQuery, Node.js, Webpack, and Gulp. In addition to development and bug fixes, I did code maintenance, review and versioning"
+  end_date: "2022-10-01"
+  location: "Berlin, Germany"
+  position: "Software Developer"
+  remote: true
+  start_date: "2022-06-01"
+  type: "Freelance"
+  url: "https://github.com/Miskatonic-Investigative-Society"
+  
+- company: "Fiverr"
+  description: "Fiverr is an online platform for freelancers to offer services to customers worldwide. There, I completed nearly a dozen commission projects around technologies such as Java and Kotlin, Spring Boot, MySQL, PostgreSQL, and sometimes React.js and Next.js"
+  end_date: "2021-10-01"
+  location: "Tel Aviv, Israel"
+  position: "Software Developer"
+  remote: true
+  start_date: "2020-12-01"
+  type: "Freelance"
+  url: "https://www.fiverr.com/"
+
+- company: "PGFN"
+  description: "Procuradoria-Geral da Fazenda Nacional (National Treasury Attorney's Office) is part of Brazilian judicial administration. As an intern, I had experience with internal tax collection, debt management, and judicial litigation systems and other legal proceedings, as well as experience related to legacy systems of justice departments, creation of procedural documents, and process automation"
+  end_date: "2020-03-01"
+  location: "Salvador, Brazil"
+  position: "Intern"
+  remote: false
+  start_date: "2018-08-01"
+  type: "Internship"
+  url: "https://www.fiverr.com/"
