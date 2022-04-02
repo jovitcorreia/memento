@@ -2,6 +2,20 @@ title: Castanho Correia
 email: me@castanhocorreia.com
 baseurl: ""
 url: "https://castanhocorreia.com"
-permalink: "/:title.html"
-plugins:
-  - jekyll-feed
+permalink: pretty
+exclude:
+  - .jekyll-cache
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug/
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins:  
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
