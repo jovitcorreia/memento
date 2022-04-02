@@ -3,9 +3,9 @@
   <div>
     <small>&#9400; {{ "now" | date: "%Y" }} Castanho Correia</small>
     <div>
-      <a href="mailto:me@castanhocorreia.com" target="_blank" rel="noreferrer"><i class="fa fa-envelope"></i></a>
-      <a href="https://github.com/castanhocorreia" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/castanhocorreia/" target="_blank" rel="noreferrer"><i class="fa fa-linkedin"></i></a>
+      <a href="mailto:{{ site.email | encode_email }}" title="Mail"><i class="fa fa-envelope"></i></a>
+      <a href="https://github.com/castanhocorreia" target="_blank" rel="noreferrer" title="GitHub"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/castanhocorreia/" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
     <div>
   </div>
 </footer>

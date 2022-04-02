@@ -22,12 +22,12 @@ layout: default
       <a href="https://elastic.co/elastic-stack/" target="_blank" rel="noreferrer"><img alt="Elastic Stack" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/elasticstack.svg" /></a>
       <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img alt="Amazon Web Services" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/amazonaws.svg" /></a>
     </div>
-    <h2>Work experiences</h2>
+    <h2>Experience</h2>
     {% for work in site.data.work %}
     <div>
       <h3>{{forloop.length | minus: forloop.index0}}. {{work.position}} at <a href={{work.url}} target="_blank" rel="noreferrer">{{work.company}}</a></h3>
       <span>{{work.type}} · {{work.location}} {% if work.remote %}(Remote){% endif %}</span>    
-      <span>{{work.start_date | date: "%b %Y"}} – {% if work.end_date %}{{work.end_date | date: "%b %Y"}}{% else %}Present{% endif %}</span>
+      <span>{{work.start_date | until: work.end_date}}</span>
       <p>{{work.description}}{% if work.projects %}</br><br/><b>Featured projects:</b>{% endif %}</p>
       {% for project in work.projects %}
         <fieldset>
