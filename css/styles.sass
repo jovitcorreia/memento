@@ -65,6 +65,7 @@ h2
   font-size: 1.6rem
   font-weight: 700
   letter-spacing: 6px
+  line-height: 1.6
   text-transform: uppercase
 
 header 
@@ -136,7 +137,7 @@ section
     #techs
         display: grid
         gap: 4rem
-        grid-template-columns: repeat(7, 1fr)
+        grid-template-columns: repeat(8, 1fr)
         justify-items: center
         margin-bottom: 10rem
         padding: 0 6rem
@@ -156,4 +157,9 @@ span
 @media screen and (max-width: 600px)
     header
         flex-direction: column
+    section
+        #techs
+            gap: 1.6rem
+            grid-template-columns: repeat(4, 1fr)
+            padding: 0
 
