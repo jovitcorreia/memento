@@ -3,38 +3,28 @@ layout: default
 ---
 
 <section>
-    <h2>Technologies I use often</h2>
-    <div id="techs">
-      <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img alt="Java" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg" /></a>
-      <a href="https://kotlinlang.org/" target="_blank" rel="noreferrer"><img alt="Kotlin" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/kotlin.svg" /></a>
-      <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noreferrer"><img alt="Spring Boot" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/springboot.svg" /></a>
-      <a href="https://spring.io/projects/spring-framework" target="_blank" rel="noreferrer"><img alt="Spring MVC" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/spring.svg" /></a>
-      <a href="https://maven.apache.org/" target="_blank" rel="noreferrer"><img alt="Apache Maven" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/apachemaven.svg" /></a>
-      <a href="https://postgresql.org/" target="_blank" rel="noreferrer"><img alt="PostgreSQL" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/postgresql.svg" /></a>
-      <a href="https://mongodb.com/" target="_blank" rel="noreferrer"><img alt="MongoDB" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/mongodb.svg" /></a>
-      <a href="https://redis.io/" target="_blank" rel="noreferrer"><img alt="Redis" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/redis.svg" /></a>
-      <a href="https://kafka.apache.org/" target="_blank" rel="noreferrer"><img alt="Apache Kafka" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/apachekafka.svg" /></a>
-      <a href="https://rabbitmq.com/" target="_blank" rel="noreferrer"><img alt="RabbitMQ" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/rabbitmq.svg" /></a>
-      <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img alt="Git" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/git.svg" /></a>
-      <a href="https://www.sonarqube.org" target="_blank" rel="noreferrer"><img alt="SonarQube" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/sonarqube.svg" /></a>
-      <a href="https://docker.com/" target="_blank" rel="noreferrer"><img alt="Docker" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/docker.svg" /></a>
-      <a href="https://kubernetes.io/" target="_blank" rel="noreferrer"><img alt="Kubernetes" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/kubernetes.svg" /></a>
-      <a href="https://elastic.co/elastic-stack/" target="_blank" rel="noreferrer"><img alt="Elastic Stack" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/elasticstack.svg" /></a>
-      <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img alt="Amazon Web Services" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/amazonaws.svg" /></a>
-    </div>
-    <h2>Experience</h2>
+    <h2>Experiences</h2>
     {% for work in site.data.work %}
     <div>
-      <h3>{{forloop.length | minus: forloop.index0}}. {{work.position}} at <a href={{work.url}} target="_blank" rel="noreferrer">{{work.company}}</a></h3>
-      <span>{{work.type}} · {{work.location}} {% if work.remote %}(Remote){% endif %}</span>    
+      <h3>{{forloop.length | minus: forloop.index}}. {{work.position}} at <a href={{work.url}} target="_blank" rel="noreferrer">{{work.company}}</a></h3>
+      <span>{{work.type}} · {{work.location}}</span>
       <span>{{work.start_date | until: work.end_date}}</span>
-      <p>{{work.description}}{% if work.projects %}</br><br/><b>Featured projects:</b>{% endif %}</p>
-      {% for project in work.projects %}
-        <fieldset>
-          <h3>{{project.name}} for  <a href={{project.url}} target="_blank" rel="noreferrer">{{project.company}}</a></h3>
-          <p>{{project.description}}</p>
-        </fieldset>
-      {% endfor %}
+      <ul>
+        {% for item in work.description %}
+          {% for pair in item %}
+            {% unless pair[0] | type == "array" %}
+              <li>{{pair}}</li>
+            {% else %}
+              <li>{{pair[0]}}:</li>
+              <ul>
+                {% for subitem in {{pair[1]}} %}
+                  <li>{{subitem}}</li>
+                {% endfor %}
+              </ul>
+            {% endunless %}
+          {% endfor %}
+        {% endfor %}
+        </ul>
     </div>
   {% endfor %}
 </section>
