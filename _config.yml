@@ -1,6 +1,6 @@
 title: J. Castanho Correia
 email: me@castanhocorreia.com
-description: "Castanho Correia. Software engineer."
+description: "J. Castanho Correia is a software engineer with expertise in building scalable and performant web applications. Explore his portfolio and read his blog to learn more about his projects, experiences, and insights."
 baseurl: ""
 url: "https://castanhocorreia.com"
 permalink: pretty
@@ -13,6 +13,12 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug/
+defaults:
+  - scope:
+      path: ""
+    values:
+      http_headers:
+        Strict-Transport-Security: "max-age=31536000; includeSubDomains"
 sass:
   sass_dir: _sass
   style: :compressed

@@ -2,13 +2,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}Home{% endif %} | {{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="J. Castanho Correia | GitHub" />
+    <meta property="og:image" content="https://github.com/castanhocorreia.png" />
+    <meta property="og:url" content="https://github.com/castanhocorreia" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="J. Castanho Correia | LinkedIn" />
+    <meta property="og:url" content="https://www.linkedin.com/in/casatanhocorreia/" />
+    {% include analytics.html %}
 </head>
