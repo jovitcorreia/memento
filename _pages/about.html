@@ -9,6 +9,12 @@ layout: default
       <h3>{{forloop.length | minus: forloop.index}}. {{work.position}} at <a href={{work.url}} target="_blank" rel="noreferrer">{{work.company}}</a></h3>
       <span>{{work.type}} · {{work.location}}</span>
       <span>{{work.start_date | until: work.end_date}}</span>
+      <ul id="techs">
+        {% for tech in work.techs %}
+          {% assign t = site.data.techs[tech]%}
+          <li><a href={{t.url}} target="_blank" title={{t.alt}}>{% svg {{t.path}} fill="gainsboro" fill-opacity="0.5" width=20 %}</a></li>
+        {% endfor %}
+      </ul>
       <ul>
         {% for item in work.description %}
           {% for pair in item %}

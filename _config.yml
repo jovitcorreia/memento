@@ -22,7 +22,10 @@ defaults:
 sass:
   sass_dir: _sass
   style: :compressed
+svg:
+  optimize: true
 plugins:
+  - jekyll-inline-svg
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap

@@ -1,0 +1,184 @@
+amazonaws:
+  alt: Amazon&nbsp;Web&nbsp;Services
+  path: /assets/icons/amazonaws.svg
+  url: https://aws.amazon.com
+apachekafka:
+  alt: Apache&nbsp;Kafka
+  path: /assets/icons/apachekafka.svg
+  url: https://kafka.apache.org/
+apachemaven:
+  alt: Apache&nbsp;Maven
+  path: /assets/icons/apachemaven.svg
+  url: https://maven.apache.org/
+apachetomcat:
+  alt: Apache&nbsp;Tomcat
+  path: /assets/icons/apachetomcat.svg
+  url: https://tomcat.apache.org/
+consul:
+  alt: Consul
+  path: /assets/icons/consul.svg
+  url: https://consul.io/
+css3:
+  alt: CSS
+  path: /assets/icons/css3.svg
+  url: https://www.w3.org/
+cucumber:
+  alt: Cucumber
+  path: /assets/icons/cucumber.svg
+  url: https://cucumber.io/
+docker:
+  alt: Docker
+  path: /assets/icons/docker.svg
+  url: https://docker.com/
+dynatrace:
+  alt: Dynatrace
+  path: /assets/icons/dynatrace.svg
+  url: https://dynatrace.com/
+elasticstack:
+  alt: Elastic&nbsp;Stack
+  path: /assets/icons/elasticstack.svg
+  url: https://www.elastic.co/elastic-stack/
+gatsby:
+  alt: Gatsby
+  path: /assets/icons/gatsby.svg
+  url: https://gatsbyjs.com/
+git:
+  alt: Git
+  path: /assets/icons/git.svg
+  url: https://git-scm.com/
+github:
+  alt: GitHub
+  path: /assets/icons/github.svg
+  url: https://github.com/
+gitlab:
+  alt: GitLab
+  path: /assets/icons/gitlab.svg
+  url: https://about.gitlab.com/
+go:
+  alt: Go
+  path: /assets/icons/go.svg
+  url: https://go.dev
+gradle:
+  alt: Gradle
+  path: /assets/icons/gradle.svg
+  url: https://gradle.org/
+grafana:
+  alt: Grafana
+  path: /assets/icons/grafana.svg
+  url: https://grafana.com/
+gulp:
+  alt: Gulp
+  path: /assets/icons/gulp.svg
+  url: https://gulpjs.com/
+handlebarsdotjs:
+  alt: Handlebars
+  path: /assets/icons/handlebarsdotjs.svg
+  url: https://handlebarsjs.com
+hibernate:
+  alt: Hibernate
+  path: /assets/icons/hibernate.svg
+  url: https://hibernate.org
+html5:
+  alt: HTML
+  path: /assets/icons/html5.svg
+  url: https://www.w3.org/
+insomnia:
+  alt: Insomnia
+  path: /assets/icons/insomnia.svg
+  url: https://insomnia.rest
+java:
+  alt: Java
+  path: /assets/icons/java.svg
+  url: https://openjdk.org/
+javascript:
+  alt: JavaScript
+  path: /assets/icons/javascript.svg
+  url: https://www.ecma-international.org
+jenkins:
+  alt: Jenkins
+  path: /assets/icons/jenkins.svg
+  url: https://jenkins.io
+jquery:
+  alt: JQuery
+  path: /assets/icons/jquery.svg
+  url: https://jquery.com
+junit5:
+  alt: JUnit
+  path: /assets/icons/junit5.svg
+  url: https://junit.org
+kotlin:
+  alt: Kotlin
+  path: /assets/icons/kotlin.svg
+  url: https://kotlinlang.org
+kubernetes:
+  alt: Kubernetes
+  path: /assets/icons/kubernetes.svg
+  url: https://kubernetes.io
+linux:
+  alt: Linux
+  path: /assets/icons/linux.svg
+  url: https://linux.org
+mariadb:
+  alt: MariaDB
+  path: /assets/icons/mariadb.svg
+  url: https://mariadb.org
+mongodb:
+  alt: MongoDB
+  path: /assets/icons/mongodb.svg
+  url: https://mongodb.com
+mysql:
+  alt: MySQL
+  path: /assets/icons/mysql.svg
+  url: https://mysql.com
+nodedotjs:
+  alt: Node.js
+  path: /assets/icons/nodedotjs.svg
+  url: https://nodejs.org
+oracle:
+  alt: Oracle
+  path: /assets/icons/oracle.svg
+  url: https://www.oracle.com/database/
+postman:
+  alt: Postman
+  path: /assets/icons/postman.svg
+  url: https://www.postman.com/
+python:
+  alt: Python
+  path: /assets/icons/python.svg
+  url: https://www.python.org/
+react:
+  alt: React
+  path: /assets/icons/react.svg
+  url: https://www.reactjs.org/
+sass:
+  alt: Sass
+  path: /assets/icons/sass.svg
+  url: https://www.sass-lang.com/
+sonar:
+  alt: Sonar
+  path: /assets/icons/sonar.svg
+  url: https://www.sonarsource.com/
+spring:
+  alt: Spring
+  path: /assets/icons/spring.svg
+  url: https://spring.io
+styledcomponents:
+  alt: Styled&nbspComponents
+  path: /assets/icons/styledcomponents.svg
+  url: https://styled-components.com
+swagger:
+  alt: Swagger
+  path: /assets/icons/swagger.svg
+  url: https://swagger.io
+typescript:
+  alt: TypeScript
+  path: /assets/icons/typescript.svg
+  url: https://typescriptlang.org
+vault:
+  alt: Vault
+  path: /assets/icons/vault.svg
+  url: https://vaultproject.io
+webpack:
+  alt: Webpack
+  path: /assets/icons/webpack.svg
+  url: https://webpack.js.org

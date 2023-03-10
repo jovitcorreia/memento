@@ -135,20 +135,24 @@ section
         margin-top: 2rem
         text-align: left
     #techs
-        display: grid
-        gap: 4rem
-        grid-template-columns: repeat(8, 1fr)
+        display: flex
+        gap: 0.6rem
         justify-items: center
-        margin-bottom: 10rem
-        padding: 0 6rem
+        list-style: none
+        margin-top: 0.6rem
+        padding: 0
+        vertical-align: center
         a
             border: none
             text-decoration: none
             &:hover
-                img
-                    filter: invert(84%) sepia(28%) saturate(4385%) hue-rotate(88deg) brightness(95%) contrast(113%)
-        img
-            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(255deg) brightness(104%) contrast(101%)
+                svg
+                    fill-opacity: 1
+                    filter: brightness(0) saturate(100%) invert(91%) sepia(16%) saturate(7402%) hue-rotate(82deg) brightness(101%) contrast(106%)
+        li
+            align-items: center
+            display: flex
+            justify-content: center
 
 span
     display: block

@@ -30,6 +30,33 @@
   start_date: "2022-01-01"
   type: "Full-time"
   url: "https://ioasys.com.br/"
+  techs:
+    - amazonaws
+    - apachekafka
+    - apachemaven
+    - apachetomcat
+    - consul
+    - cucumber
+    - docker
+    - dynatrace
+    - elasticstack
+    - git
+    - gitlab
+    - go
+    - grafana
+    - hibernate
+    - insomnia
+    - java
+    - jenkins
+    - junit5
+    - kubernetes
+    - linux
+    - mongodb
+    - oracle
+    - sonar
+    - spring
+    - swagger
+    - vault
 
 - company: "Kontulari"
   description:
@@ -45,6 +72,31 @@
   start_date: "2021-10-01"
   type: "Full-time"
   url: "https://kontulari.com.br/"
+  techs:
+    - amazonaws
+    - apachetomcat
+    - css3
+    - docker
+    - gatsby
+    - git
+    - github
+    - gitlab
+    - hibernate
+    - html5
+    - insomnia
+    - java
+    - javascript
+    - linux
+    - mysql
+    - nodedotjs
+    - postman
+    - python
+    - react
+    - sass
+    - spring
+    - styledcomponents
+    - swagger
+    - typescript
 
 - company: "Chaosium"
   description:
@@ -60,6 +112,21 @@
   start_date: "2022-07-01"
   type: "Freelance"
   url: "https://www.chaosium.com/"
+  techs:
+    - css3
+    - git
+    - github
+    - gulp
+    - handlebarsdotjs
+    - html5
+    - javascript
+    - jquery
+    - linux
+    - mongodb
+    - nodedotjs
+    - sass
+    - typescript
+    - webpack
 
 - company: "Fiverr"
   description:
@@ -75,6 +142,34 @@
   start_date: "2020-03-01"
   type: "Freelance"
   url: "https://www.fiverr.com/"
+  techs:
+    - amazonaws
+    - apachetomcat
+    - css3
+    - git
+    - github
+    - gradle
+    - hibernate
+    - html5
+    - java
+    - javascript
+    - jquery
+    - junit5
+    - kotlin
+    - linux
+    - mariadb
+    - mongodb
+    - nodedotjs
+    - postman
+    - python
+    - react
+    - sass
+    - sonar
+    - spring
+    - styledcomponents
+    - swagger
+    - typescript
+    - webpack
 
 - company: "PGFN"
   description:
